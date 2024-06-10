@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dca"
+        android:text="@string/DCA"
+        android:layout_toStartOf="@+id/bt1"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="-10dp"
+        android:backgroundTint="#4AC35E"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/mars"
+        android:text="@string/mars"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/bt1"
+        android:backgroundTint="#4AC35E"
+
+        android:layout_marginStart="-10dp"/>
+
+ <Button
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:text="@string/bt1"
+     android:id="@+id/bt1"
+     android:textColor="@color/black"
+     android:backgroundTint="#9FE1A91C"
+     android:layout_centerInParent="true"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvFlights"
+        android:text="@string/tvFlights"
+        android:layout_above="@+id/bt1"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvSpace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toStartOf="@+id/tvFlights"
+        android:layout_above="@+id/dca"
+        android:layout_marginEnd="18dp"
+        android:text="@string/space"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvRovers"
+        android:text="@string/tvRovers"
+        android:layout_above="@+id/mars"
+        android:layout_toEndOf="@+id/tvFlights"
+        android:layout_marginStart="18dp"/>
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/on_way"
+        android:id="@+id/Switch"
+
+        android:thumbTint="@color/switch_thumb_color"
+        android:trackTint="@color/switch_track_color"
+
+        android:layout_below="@+id/dca"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="12dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="8dp"
+
+        android:text="@string/traveller"
+        android:background="#4AC35E"
+        android:layout_below="@+id/Switch"/>
+
+
+</RelativeLayout>
